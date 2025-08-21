@@ -1,0 +1,238 @@
+.glow-on-hover {
+  position: relative;               /* required for the pseudo element */
+  --gx: 50%;                        /* glow x (percent) */
+  --gy: 50%;                        /* glow y (percent) */
+  transition: box-shadow 200ms ease, border-color 200ms ease;
+  will-change: box-shadow;          /* hint for performance */
+}
+
+/* localized glow layer */
+.glow-on-hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  border-radius: inherit;
+  background: radial-gradient(
+    320px 220px at var(--gx) var(--gy),
+    rgba(99,102,241,0.28) 0%,
+    rgba(99,102,241,0.14) 8%,
+    rgba(99,102,241,0.06) 18%,
+    rgba(99,102,241,0.00) 45%
+  );
+  mix-blend-mode: screen;
+  opacity: 0;
+  transform: translateZ(0);
+  filter: blur(8px);
+  transition: opacity 200ms ease, transform 200ms ease;
+  z-index: 2;
+}
+
+/* visible on hover / focus */
+.glow-on-hover:hover::after,
+.glow-on-hover:focus-within::after {
+  opacity: 1;
+}
+
+/* border / shadow emphasis on hover */
+.glow-on-hover:hover,
+.glow-on-hover:focus-within {
+  box-shadow:
+    0 10px 30px rgba(16, 24, 40, 0.45),
+    0 0 0 1px rgba(99,102,241,0.12);
+  border-color: rgba(30, 32, 99, 0.3); /* if element has border */
+   /* hide default cursor */
+   /* hide default cursor */
+cursor: hidden;}
+
+/* keyboard-accessible focus (for inputs inside) */
+.glow-on-hover:focus-within {
+  outline: 2px solid rgba(99,102,241,0.12);
+  outline-offset: 2px;
+  cursor: hidden;
+}
+
+/* slightly different for small screens — reduce effect for perf */
+@media (max-width: 768px) {
+  .glow-on-hover::after { display: none; }
+  .glow-on-hover { box-shadow: 0 6px 12px rgba(2,6,23,0.45); cursor: hidden; }
+  
+}
+
+/* ensure cards and header sit above the glow */
+.form-header,
+.form-card {
+  position: relative;
+  z-index: 10;
+
+}
+
+/* ====== Basic layout ====== */
+.form-container {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.form-card {
+  background: rgba(7,18,41,0.65);
+  border-radius: 14px;
+  padding: 1.25rem;
+  box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+  color: #e6eef8;
+  max-width: 100%;
+}
+
+/* header */
+.form-header .form-title {
+  font-size: 1.8rem;
+  color: #f6fbff;
+  margin-bottom: 0.25rem;
+}
+.form-header .form-subtitle {
+  color: rgba(230,238,248,0.8);
+  margin-bottom: 0.5rem;
+}
+
+/* progress */
+.custom-progress {
+  height: 6px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.06);
+  overflow: hidden;
+}
+.progress-steps {
+  display: flex;
+  gap: 8px;
+  margin-top: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.progress-steps .step {
+  font-size: 12px;
+  color: rgba(230,238,248,0.6);
+  padding: 4px 8px;
+  border-radius: 8px;
+}
+.progress-steps .step.active {
+  color: #071227;
+  background: rgba(255,255,255,0.9);
+}
+
+/* ====== 3D-like Input styles (visual only) ====== */
+.input-3d-wrapper,
+.textarea-3d-wrapper {
+  width: 100%;
+}
+
+.input-3d-container,
+.textarea-3d-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  gap: 8px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid rgba(255,255,255,0.04);
+  box-shadow: 0 6px 18px rgba(2,6,23,0.5), inset 0 -6px 24px rgba(255,255,255,0.01);
+}
+
+/* subtle gradient layer */
+.input-3d-gradient,
+.textarea-3d-gradient {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.015), rgba(0,0,0,0.02));
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+/* content wraps icon + control */
+.input-3d-content,
+.textarea-3d-content {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  z-index: 2;
+}
+
+/* input/textarea base */
+.input-3d,
+.textarea-3d {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #e6eef8;
+  font-size: 14px;
+  width: 100%;
+  padding: 6px 0;
+  resize: vertical;
+}
+
+/* icon in inputs */
+.input-icon {
+  color: rgba(230,238,248,0.7);
+  font-size: 16px;
+  margin-left: 4px;
+}
+
+/* step header */
+.step-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.step-icon {
+  font-size: 28px;
+  color: rgba(230,238,248,0.9);
+}
+.step-title {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f6fbff;
+}
+.step-description {
+  margin: 0;
+  font-size: 13px;
+  color: rgba(230,238,248,0.75);
+}
+
+/* step content spacing */
+.step-content {
+  margin-top: 8px;
+}
+
+/* list items */
+.experience-item,
+.education-item {
+  border-radius: 10px;
+  padding: 12px;
+  margin-bottom: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.01), rgba(0,0,0,0.02));
+  border: 1px solid rgba(255,255,255,0.03);
+}
+
+/* buttons */
+.add-btn,
+.remove-btn,
+.generate-btn {
+  margin-top: 8px;
+}
+
+/* responsive adjustments */
+@media (max-width: 768px) {
+  .resume-form-3d::before {
+    /* tone down the glow on small screens */
+    filter: blur(8px);
+    opacity: 0.9;
+  }
+  .form-card {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+}
