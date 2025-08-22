@@ -106,6 +106,51 @@ const emptyEducation = () => ({
   gpa: ""
 });
 
+// Sample resume data for quick start
+const sampleResumeData = () => ({
+  personalInfo: {
+    firstName: "John",
+    lastName: "Doe",
+    email: "john.doe@example.com",
+    phone: "+1 (555) 123-4567",
+    location: "San Francisco, CA",
+    linkedin: "linkedin.com/in/johndoe"
+  },
+  summary: "Experienced software engineer with 5+ years of expertise in full-stack development, specializing in React, Node.js, and cloud technologies. Proven track record of delivering scalable solutions and leading development teams.",
+  experience: [
+    {
+      id: uid(),
+      jobTitle: "Senior Software Engineer",
+      company: "Tech Solutions Inc.",
+      location: "San Francisco, CA",
+      startDate: "2022-01",
+      endDate: "",
+      current: true,
+      description: "Lead development of microservices architecture, improved system performance by 40%, and mentored junior developers. Technologies: React, Node.js, AWS, Docker."
+    },
+    {
+      id: uid(),
+      jobTitle: "Full Stack Developer",
+      company: "Digital Innovations LLC",
+      location: "New York, NY",
+      startDate: "2020-03",
+      endDate: "2021-12",
+      current: false,
+      description: "Developed and maintained web applications using React and Python. Collaborated with cross-functional teams to deliver high-quality software solutions."
+    }
+  ],
+  education: [
+    {
+      id: uid(),
+      degree: "Bachelor of Science in Computer Science",
+      school: "Stanford University",
+      graduationDate: "2020-05",
+      gpa: "3.8"
+    }
+  ],
+  skills: ["JavaScript", "React", "Node.js", "Python", "AWS", "Docker", "Git", "MongoDB", "PostgreSQL", "REST APIs", "GraphQL", "Agile Development"]
+});
+
 // Main Resume Form Component
 const ResumeForm3D = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -346,6 +391,10 @@ const ResumeForm3D = () => {
     setShowPreview(true);
   };
 
+  const loadSampleData = () => {
+    setFormData(sampleResumeData());
+  };
+
   // If showing preview, render the preview component
   if (showPreview) {
     return <ResumePreview formData={formData} template={selectedTemplate} onBack={handleBackFromPreview} />;
@@ -407,6 +456,13 @@ const ResumeForm3D = () => {
               <div className="form-header text-center mb-5">
                 <h1 className="form-title">Create Your Professional Resume</h1>
                 <p className="form-subtitle">Build a stunning resume with our 3D form builder</p>
+
+                {/* Sample Data Button */}
+                <div className="text-center mb-3">
+                  <Button variant="outline-info" onClick={loadSampleData} className="sample-data-btn">
+                    📝 Load Sample Resume
+                  </Button>
+                </div>
 
                 {/* Progress Bar */}
                 <div className="progress-container mt-4">

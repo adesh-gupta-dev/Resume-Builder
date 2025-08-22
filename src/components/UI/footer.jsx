@@ -31,13 +31,13 @@ const Footer = () => {
           </Col>
         </Row>
          <Row className="align-items-center text-center text-md-start">
-          <col md={12}>
+          <Col md={12}>
             <p className="mb-0 mt-2">
-              <strong><p>
+              <strong>
                 Made with <span role="img" aria-label="love">❤️</span>
-                </p></strong>
+              </strong>
             </p>
-          </col>
+          </Col>
          </Row>
       </Container>
     </footer>

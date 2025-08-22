@@ -69,7 +69,7 @@
   position: relative;
 }
 
-/* Template 1 Mockup */
+/* Template 1 Mockup - Classic Professional */
 .template-1 {
   background: white;
   border: 1px solid #e0e0e0;
@@ -78,19 +78,21 @@
 .template-1 .mockup-header {
   text-align: center;
   padding: 1rem;
-  border-bottom: 2px solid #667eea;
+  border-bottom: 2px solid #2c3e50;
+  background: #2c3e50;
+  color: white;
 }
 
 .template-1 .mockup-name {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #333;
+  color: white;
   margin-bottom: 0.25rem;
 }
 
 .template-1 .mockup-title {
   font-size: 0.9rem;
-  color: #667eea;
+  color: #ecf0f1;
   font-style: italic;
 }
 
@@ -113,7 +115,7 @@
   width: 60%;
 }
 
-/* Template 2 Mockup */
+/* Template 2 Mockup - Modern Minimalist */
 .template-2 {
   background: white;
   border: 1px solid #e0e0e0;
@@ -123,18 +125,20 @@
   display: flex;
   justify-content: space-between;
   padding: 1rem;
-  border-bottom: 2px solid #764ba2;
+  border-bottom: 2px solid #3498db;
+  background: #3498db;
+  color: white;
 }
 
 .template-2 .mockup-name {
   font-size: 1.1rem;
   font-weight: bold;
-  color: #333;
+  color: white;
 }
 
 .template-2 .mockup-title {
   font-size: 0.8rem;
-  color: #764ba2;
+  color: #ecf0f1;
 }
 
 .template-2 .mockup-content {
@@ -159,7 +163,7 @@
   width: 80%;
 }
 
-/* Template 3 Mockup */
+/* Template 3 Mockup - Creative Portfolio */
 .template-3 {
   background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
   border: 1px solid #e0e0e0;
@@ -167,7 +171,7 @@
 
 .template-3 .mockup-header {
   text-align: center;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #9b59b6 0%, #8e44ad 100%);
   color: white;
   padding: 1rem;
 }

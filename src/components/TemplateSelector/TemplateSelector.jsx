@@ -9,21 +9,24 @@ const TemplateSelector = ({ selectedTemplate, onTemplateSelect, onPreview }) => 
       name: "Classic Professional",
       description: "Traditional and elegant design perfect for corporate environments",
       image: "classic-template",
-      features: ["Clean typography", "Professional layout", "Easy to read", "ATS friendly"]
+      features: ["Clean typography", "Professional layout", "Easy to read", "ATS friendly"],
+      color: "#2c3e50"
     },
     {
       id: 2,
       name: "Modern Minimalist",
       description: "Contemporary design with clean lines and modern aesthetics",
       image: "modern-template",
-      features: ["Two-column layout", "Modern typography", "Visual hierarchy", "Creative design"]
+      features: ["Two-column layout", "Modern typography", "Visual hierarchy", "Creative design"],
+      color: "#3498db"
     },
     {
       id: 3,
       name: "Creative Portfolio",
       description: "Eye-catching design with gradients and visual elements",
       image: "creative-template",
-      features: ["Gradient backgrounds", "Card-based layout", "Visual appeal", "Stand out design"]
+      features: ["Gradient backgrounds", "Card-based layout", "Visual appeal", "Stand out design"],
+      color: "#9b59b6"
     }
   ];
 
@@ -42,8 +45,8 @@ const TemplateSelector = ({ selectedTemplate, onTemplateSelect, onPreview }) => 
             onClick={() => onTemplateSelect(template.id)}
           >
             <div className="template-preview">
-              <div className={`template-mockup template-${template.id}`}>
-                <div className="mockup-header">
+              <div className={`template-mockup template-${template.id}`} style={{ borderColor: template.color }}>
+                <div className="mockup-header" style={{ backgroundColor: template.color }}>
                   <div className="mockup-name">John Doe</div>
                   <div className="mockup-title">Software Engineer</div>
                 </div>

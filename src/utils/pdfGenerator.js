@@ -1,7 +1,6 @@
 // PDF Generator Utility
 // This is a simple implementation using html2pdf.js
 // You can enhance this with more advanced PDF generation libraries
-// import html2pdf from 'html2pdf.js/dist/html2pdf.min.js';
 
 export const generatePDF = async (elementId, filename = 'resume.pdf') => {
   try {
