@@ -22,6 +22,7 @@ import {
   FaCode,
   FaHeart
 } from 'react-icons/fa';
+import Layout from './Layout.jsx';
 import './componentCss/About.css';
 
 const About = () => {
@@ -113,6 +114,7 @@ const About = () => {
   ];
 
   return (
+    <Layout>
     <div className="about-page">
       {/* Hero Section */}
       <section className="hero-section">
@@ -414,6 +416,7 @@ const About = () => {
         </Container>
       </section>
     </div>
+    </Layout>
   );
 };
 

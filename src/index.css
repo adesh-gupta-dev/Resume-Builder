@@ -1,7 +1,8 @@
 body {
   margin: 0;
-   background:radial-gradient(ellipse  at top,#580d5f, #063d31  ,#260135 90%);
-   background-size: 150% 100%;
+background: linear-gradient(135deg, #0f2027 0%, #2c5364 40%, #a83279 70%, #ff5fa2 100%);
+
+   background-size: 120% 120%; 
    animation: bg-animation 3s ease-in-out infinite alternate;
    background-repeat: no-repeat;
    width: 100%;
@@ -12,7 +13,7 @@ body {
     background-position: 0% 50%;
   }
   100% {
-    background-position: 100% 100%;
+    background-position: 10% 100%;
   }
   
 }

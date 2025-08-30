@@ -10,7 +10,7 @@ const ResumePreview = ({ formData, template, onBack }) => {
   const handleDownload = async () => {
     if (resumeRef.current) {
       resumeRef.current.id = 'resume-content';
-      const result = await generatePDF('resume-content', `${formData.personalInfo.firstName}_${formData.personalInfo.lastName}_Resume.pdf`);
+      const result = await generatePDF('resume-content', `${formData.personalInfo.firstName}_${formData.personalInfo.lastName}__Resume.pdf`);
       if (result.success) {
         console.log('PDF downloaded successfully');
       } else {
@@ -23,8 +23,10 @@ const ResumePreview = ({ formData, template, onBack }) => {
     const result = printResume();
     if (result.success) {
       console.log('Print dialog opened');
+      alert('Print dialog opened');
     } else {
       console.error('Print failed:', result.message);
+      alert('Print failed: ' + result.message);
     }
   };
 
@@ -33,7 +35,7 @@ const ResumePreview = ({ formData, template, onBack }) => {
       <div className="resume-header">
         <div className="header-content">
           <h1 className="name">{formData.personalInfo.firstName} {formData.personalInfo.lastName}</h1>
-          <p className="title">Professional Resume</p>
+          {/* <p className="title">Professional Resume</p> */}
           <div className="contact-info">
             <div className="contact-item">
               <FaEnvelope className="icon" />
@@ -127,7 +129,7 @@ const ResumePreview = ({ formData, template, onBack }) => {
       <div className="resume-header">
         <div className="header-left">
           <h1 className="name">{formData.personalInfo.firstName} {formData.personalInfo.lastName}</h1>
-          <p className="title">Professional Resume</p>
+          {/* <p className="title">Professional Resume</p> */}
         </div>
         <div className="header-right">
           <div className="contact-info">
@@ -219,7 +221,7 @@ const ResumePreview = ({ formData, template, onBack }) => {
       <div className="resume-header">
         <div className="header-content">
           <h1 className="name">{formData.personalInfo.firstName} {formData.personalInfo.lastName}</h1>
-          <p className="title">Professional Resume</p>
+          {/* <p className="title">Professional Resume</p> */}
           <div className="contact-info">
             <div className="contact-item">
               <FaEnvelope className="icon" />

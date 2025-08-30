@@ -9,7 +9,7 @@ import './componentCss/navigation.css'; // Assuming you have a CSS file for styl
 
 function Navbar2() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="custom-navbar">
+    <Navbar   expand="lg" className="custom-navbar">
       <Container>
         <Navbar.Brand as={Link} to="/" className="brand">
           <FaRocket className="brand-icon" />

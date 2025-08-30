@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+   background:transparent; 
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -273,7 +273,8 @@
 
 .feature-card:hover {
   transform: translateY(-10px);
-  background: #ff2af4cb;
+  background: #a5dfd0d7;
+  color: blueviolet;
 }
 
 .feature-icon {
@@ -287,7 +288,9 @@
   font-weight: bold;
   margin-bottom: 1rem;
 }
-
+.Container{
+  background:transparent;
+}
 .feature-description {
   opacity: 0.8;
   line-height: 1.6;
@@ -301,14 +304,14 @@
   right: 0;
   bottom: 0;
   overflow: hidden;
-  z-index: 1;
+  z-index: -100;
 }
 
 .bg-shape {
   position: absolute;
   border-radius: 50%;
   background: rgba(255, 255, 255, 0.05);
-  animation: float 6s ease-in-out infinite;
+  animation: float 5s ease-in-out infinite;
 }
 
 .bg-shape-1 {
@@ -337,8 +340,11 @@
 
 /* Animations */
 @keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%, 100% { transform: translateY(0px); 
+  opacity: 1;
+}
+  50% { transform: translateY(-30px);
+  opacity: 0.8; }
 }
 
 @keyframes shimmer {

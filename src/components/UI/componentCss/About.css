@@ -1,19 +1,22 @@
 /* About Page Styles */
 .about-page {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0f2027 0%, #4b0e73 40%, #a83279 70%, #ff5fa2 100%);
+
   min-height: 100vh;
 }
 
 /* Hero Section */
 .hero-section {
   padding: 6rem 0 4rem;
-  background: rgba(255, 255, 255, 0.1);
+  background:#ffffff36;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.navbar{ 
+  background-color: transparent !important;
+}
 .hero-content {
-  color: white;
+  color: #000000;
 }
 
 .hero-title {
@@ -54,7 +57,7 @@
 
 .stat-item {
   text-align: center;
-  background: rgba(255, 255, 255, 0.1);
+  background:#ffffffa1;
   padding: 1.5rem;
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -92,32 +95,32 @@
 .responsive-section,
 .project-info-section {
   padding: 5rem 0;
-  background: white;
+  background: rgba(255, 255, 255, 0.247);
 }
 
 .features-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa56 0%, #c3cfe262 100%);
 }
 
 .how-it-works-section {
-  background: white;
+  background: #ffffff48;
 }
 
 .templates-section {
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
+  color: #ffffff44;
 }
 
 .tech-section {
-  background: #f8f9fa;
+  background: #f8f9fa4d;
 }
 
 .responsive-section {
-  background: white;
+  background:#ffffffa1;
 }
 
 .project-info-section {
-  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  background: linear-gradient(135deg, #f5f7fa48 0%, #c3cfe25d 100%);
 }
 
 .section-title {
@@ -133,7 +136,7 @@
 
 .section-subtitle {
   font-size: 1.2rem;
-  color: #666;
+  color: #ffffff;
   margin-bottom: 3rem;
 }
 
@@ -143,8 +146,7 @@
 
 /* Feature Cards */
 .feature-card {
-  background: white;
-  border: none;
+  background:#ffffffa1;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
@@ -176,7 +178,7 @@
 
 /* Step Cards */
 .step-card {
-  background: white;
+  background:#ffffffa1;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -211,7 +213,7 @@
 
 /* Template Cards */
 .template-card {
-  background: rgba(255, 255, 255, 0.1);
+  background:#ffffffa1;
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 15px;
   backdrop-filter: blur(10px);
@@ -221,14 +223,14 @@
 
 .template-card:hover {
   transform: translateY(-5px);
-  background: rgba(255, 255, 255, 0.2);
+  background:#ffffffa1;
 }
 
 .template-name {
   font-size: 1.3rem;
   font-weight: bold;
   margin-bottom: 1rem;
-  color: white;
+  color: rgba(255, 255, 255, 0);
 }
 
 .template-description {
@@ -244,8 +246,8 @@
 }
 
 .feature-badge {
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
+  background:#ffffffa1;
+  color: rgb(255, 255, 255);
   border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 0.5rem 1rem;
   border-radius: 20px;
@@ -261,7 +263,7 @@
 
 /* Technology Section */
 .tech-item {
-  background: white;
+  background:#ffffffa1;
   padding: 2rem;
   border-radius: 15px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -322,7 +324,7 @@
   position: absolute;
   border: 3px solid #333;
   border-radius: 10px;
-  background: #f0f0f0;
+  background:#ffffffa1;
 }
 
 .device-mockup.desktop {
@@ -356,7 +358,7 @@
 
 /* Project Info Section */
 .project-info {
-  background: white;
+  background:#ffffffa1;
   padding: 3rem;
   border-radius: 20px;
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
@@ -447,7 +449,7 @@
 }
 
 .tech-category {
-  background: #f8f9fa;
+  background:#ffffffa1;
   padding: 1.5rem;
   border-radius: 10px;
   border-left: 4px solid #667eea;

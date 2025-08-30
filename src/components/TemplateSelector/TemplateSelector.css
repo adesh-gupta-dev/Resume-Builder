@@ -13,13 +13,13 @@
 .selector-header h2 {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #333;
+  color: #000000;
   margin-bottom: 1rem;
 }
 
 .selector-header p {
   font-size: 1.1rem;
-  color: #666;
+  color: #ffffff;
   max-width: 600px;
   margin: 0 auto;
 }
@@ -230,6 +230,7 @@
 
 .template-info {
   padding: 1.5rem;
+  background: #c2bdbdbe;
 }
 
 .template-name {
@@ -288,7 +289,7 @@
 .selector-footer {
   text-align: center;
   padding: 2rem;
-  background: rgba(102, 126, 234, 0.05);
+  background: rgba(227, 229, 236, 0.534);
   border-radius: 15px;
   border: 1px solid rgba(102, 126, 234, 0.1);
 }

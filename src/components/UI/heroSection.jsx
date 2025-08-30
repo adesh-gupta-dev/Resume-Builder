@@ -31,7 +31,7 @@ const HeroSection = () => {
 
   return (
     <div className="hero-section">
-      <Container>
+      <Container >
         <Row className="align-items-center">
           <Col lg={6} className="hero-content">
             <div className="hero-badge">
@@ -71,7 +71,7 @@ const HeroSection = () => {
             </div>
           </Col>
           
-          <Col lg={6} className="hero-visual">
+          <Col lg={6} className="hero-visual mt-4 mt-lg-0">
             <div className="hero-mockup">
               <div className="mockup-screen">
                 <div className="screen-content">

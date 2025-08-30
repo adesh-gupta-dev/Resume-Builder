@@ -2,7 +2,7 @@
   position: relative;               /* required for the pseudo element */
   --gx: 50%;                        /* glow x (percent) */
   --gy: 50%;                        /* glow y (percent) */
-  transition: box-shadow 200ms ease, border-color 200ms ease;
+  transition: box-shadow 20ms ease, border-color 20ms ease;
   will-change: box-shadow;          /* hint for performance */
 }
 
@@ -194,12 +194,12 @@ cursor: hidden;}
 .step-title {
   margin: 0;
   font-size: 1.1rem;
-  color: #f6fbff;
+  color: #f7f7f7;
 }
 .step-description {
   margin: 0;
   font-size: 13px;
-  color: rgba(230,238,248,0.75);
+  color: rgb(96, 106, 119);
 }
 
 /* step content spacing */

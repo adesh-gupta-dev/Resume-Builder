@@ -4,7 +4,7 @@ import './componentCss/herocard.css';
 import heroCardHoverBackground from '../../assets/images/hero.card.hover.background.png'; // Ensure this path is correct
 const Card = () => {
   return (
-<div className="container-card noselect">
+<div className="container-card noselect mt-sm-3">
   <div className="canvas">
     <div className="tracker tr-1"></div>
     <div className="tracker tr-2"></div>
