@@ -1,14 +1,22 @@
 /* Navigation Styles */
 .custom-navbar {
-  /* background: transprant !important; */
+  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
+  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
+  padding: 5px;
+  width: 80%;
+  margin: 10px auto;
+
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   z-index: 100;
 }
 .navbar{ 
-  background-color: transparent !important;
+  background: #514c4c29 !important;
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 10px;
+  /* background-color: transparent !important; */
+  border-radius: 50px;
 }
 .brand {
   font-size: 1.5rem;

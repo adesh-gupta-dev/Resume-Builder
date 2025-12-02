@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-   background:transparent; 
+   background:transparent !important; 
   min-height: 100vh;
   position: relative;
   overflow: hidden;
