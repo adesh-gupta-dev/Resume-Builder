@@ -1,24 +1,20 @@
 /* About Page Styles */
 .about-page {
-<<<<<<< Updated upstream
-  /* background: linear-gradient(135deg, #0f2027 0%, #4b0e73 40%, #a83279 70%, #ff5fa2 100%); */
-=======
-  background: linear-gradient(135deg, #588ba19f 0%, #9d72b9ab 40%, #283469 70%, #2f8099 100%);
->>>>>>> Stashed changes
+  background: linear-gradient(135deg, #0f2027 0%, #4b0e73 40%, #a83279 70%, #ff5fa2 100%);
 
   min-height: 100vh;
 }
-p{
-  color:#563b5b;
-}
+
 /* Hero Section */
 .hero-section {
   padding: 6rem 0 4rem;
-  /* background:#ffffff36; */
+  background:#ffffff36;
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-
+.navbar{ 
+  background-color: transparent !important;
+}
 .hero-content {
   color: #000000;
 }

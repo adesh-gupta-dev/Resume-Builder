@@ -1,41 +1,14 @@
 /* Navigation Styles */
 .custom-navbar {
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
-  /* border-bottom: 1px solid rgba(255, 255, 255, 0.1); */
-  padding: 5px;
-  width: 80%;
-  margin: 10px auto;
-
+  /* background: transprant !important; */
   backdrop-filter: blur(10px);
-<<<<<<< Updated upstream
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   padding: 1rem 0;
-=======
-  position: sticky !important;
-  border-radius: 50px;
-  top:10px;
-  transition: all 0.8s ease;
-  padding: 1rem 0;
-  /* box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); */
->>>>>>> Stashed changes
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   z-index: 100;
-  margin: 10px auto;
-  width: 80%;
-}
-.custom-navbar:hover{
-  background: rgba(255, 255, 255, 0.1) !important;
-  border:1px dotted rgba(58, 39, 58, 0.664);
 }
 .navbar{ 
-<<<<<<< Updated upstream
-  background: #514c4c29 !important;
-  backdrop-filter: blur(20px);
-  position: sticky;
-  top: 10px;
-  /* background-color: transparent !important; */
-  border-radius: 50px;
-=======
-  background-color: #988ba775 !important;
->>>>>>> Stashed changes
+  background-color: transparent !important;
 }
 .brand {
   font-size: 1.5rem;
@@ -196,7 +169,7 @@
 
 @media (max-width: 576px) {
   .brand {
-    font-size: .8rem;
+    font-size: 1.2rem;
   }
 
   .brand-icon {

@@ -1,6 +1,6 @@
 /* Hero Section Styles */
 .hero-section {
-   background:transparent !important; 
+   background:transparent; 
   min-height: 100vh;
   position: relative;
   overflow: hidden;
@@ -165,7 +165,7 @@
 }
 
 .hero-mockup:hover .mockup-screen {
-  transform: rotateY(25deg) rotateX(9deg);
+  transform: rotateY(-10deg) rotateX(2deg);
 }
 
 .screen-content {
@@ -299,7 +299,6 @@
 /* Background Shapes */
 .hero-background {
   position: absolute;
-  background: transparent;
   top: 0;
   left: 0;
   right: 0;
@@ -341,10 +340,10 @@
 
 /* Animations */
 @keyframes float {
-  0%, 100% { transform: translate(0px); 
+  0%, 100% { transform: translateY(0px); 
   opacity: 1;
 }
-  50% { transform: translate(30px);
+  50% { transform: translateY(-30px);
   opacity: 0.8; }
 }
 
@@ -384,9 +383,13 @@
 
   .mockup-screen {
     width: 300px;
+    height: 400px;
+    transform: none;
   }
 
- 
+  .hero-mockup:hover .mockup-screen {
+    transform: none;
+  }
 }
 
 @media (max-width: 768px) {
@@ -420,12 +423,9 @@
 
   .mockup-screen {
     width: 250px;
-    height: 450px;
-    font-size: 0.9rem !important;
+    height: 350px;
   }
-  .screen-content {
-    font-size: 0.9rem !important;
-  }
+
   .bg-shape-1 {
     width: 200px;
     height: 200px;
@@ -457,12 +457,11 @@
   }
 
   .mockup-screen {
-    width: 250px;
-    height: 450px;
+    width: 200px;
+    height: 300px;
   }
-  
+
   .screen-content {
-    font-size: 0.5rem !important;
     padding: 1rem;
   }
 }
